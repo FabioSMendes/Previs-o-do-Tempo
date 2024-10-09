@@ -1,0 +1,84 @@
+*{ /*stylo padrão abaixo é para zerar os valores do navegador das margens*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif; /*Font retirada do google*/
+}
+
+body {
+    height: 100vh; /* Deixar a altura para oculpar a tela inteira */
+    width: 100vw; /*Deixar a largura oculpar a tela inteira*/
+    display: flex;
+    justify-content: center; /*Alinha o body no eixo horizontal*/
+    align-items: center; /*Alinha o body no eixo vertical*/
+    background-image: url("https://images.pexels.com/photos/457881/pexels-photo-457881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.container {
+    background: #000000; /*Cor do container*/
+    opacity: 0.8; /*Opacidade do container*/
+    border-radius: 25px; /*Borda do container*/
+    padding: 20px; /*Espaço interno do container que está as informações*/
+    width: 95%; /*Tamanho do container das informações conforme tela*/
+    max-width: 450px; /*maximo tamanho conforme tela*/
+}
+
+.input-city {
+    border: none; /*Remover a borda do input*/
+    outline: none; /*remover linha azul do google*/
+    padding: 10px; /*Espaço interno do input com as letras*/
+    border-radius: 25px; /*Arredondamento da borda do input*/
+    font-size:20px; /*Tamanho da font*/
+    background-color: #7c7c7c2b; /*Cor interna do input*/
+    color: #ffffff; /*Cor do texto digitado*/
+    width: calc(100% - 70px); /*vai ajustar o input com o botão chenagndo no minimo de distância de 70px*/
+}
+
+.button-search {
+    border: none; /*Remover a borda do input*/
+    outline: none; /*remover linha azul do google*/
+    padding: 10px; /*Espaço interno do botão separando da lupa*/
+    border-radius: 50px; /*Arredondamento da borda do botão*/
+    background-color: #7c7c7c2b; /*Cor interna*/
+    cursor: pointer; /*Mudança de mouse*/
+    float: right; /*Ajust na distancia do botão*/
+}
+
+.img-search {
+    width: 20px; /*Ajuste no tamanho da lupa de busca*/
+}
+
+.container-mid {
+    margin-top: 30px; /*Ajuste da caixa do centro*/
+}
+
+.city { /*estilização do nome da cidade*/
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.temp, .temp-min, .temp-max {
+    font-size: 20px;
+}
+
+.container-inf { /*ajuste da caixa inferior com a imagem da nuvem e forma do tempo*/
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.text-pvs { /*Ajuste de cor e distancia do texto da previsão com o icone do tempo*/
+    color: #ffffff;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.humidity, .temp, .temp-min, .temp-max {
+    color: #ffffff;
+    margin-top: 20px;
+}
